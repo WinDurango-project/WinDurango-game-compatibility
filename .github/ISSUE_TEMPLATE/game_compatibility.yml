@@ -1,0 +1,73 @@
+name: Game Compatibility
+description: Report a game's compatibility status on WinDurango
+body:
+  - type: input
+    id: game-name
+    attributes:
+      label: Game Name
+      placeholder: "Game Name"
+    validations:
+      required: true
+  - type: input
+    id: game-code
+    attributes:
+      label: Game code
+      placeholder: "e.g. CUSA10005"
+    validations:
+      required: true
+  - type: input  
+    id: game-version
+    attributes:
+      label: Game version
+      placeholder: "e.g. v01.00"
+    validations:
+      required: true
+  - type: input
+    id: emulator-version
+    attributes:
+      label: Used emulator's version (only released versions are acceptable)
+      placeholder: "e.g v0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: emulation-status
+    attributes:
+      label: Current status
+      options:
+        - Playable
+        - Ingame
+        - Menus
+        - Boots
+        - Nothing      
+    validations:
+      required: true
+  - type: textarea
+    id: emulation-error
+    attributes:
+      label: Error
+      placeholder: ## Error
+    validations:
+      required: true
+  - type: textarea
+    id: emulation-description
+    attributes:
+      label: Description
+      placeholder: ## Description
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshots
+      description: Add screenshots here (preferably on windowed mode) if the game is rendering.
+      placeholder: Drag and drop the images/screenshots onto the text area.
+    validations:
+      required: false
+  - type: textarea
+    id: log
+    attributes:
+      label: Log File
+      description: Logs files can be found at user/log
+      placeholder: Drag and drop the log file onto the text area.
+    validations:
+      required: true
