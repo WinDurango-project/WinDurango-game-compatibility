@@ -14,7 +14,7 @@ body:
       label: Game code
       placeholder: "e.g. CUSA10005"
     validations:
-      required: true
+      required: false
   - type: input  
     id: game-version
     attributes:
@@ -28,7 +28,7 @@ body:
       label: Used emulator's version (only released versions are acceptable)
       placeholder: "e.g v0.1.0"
     validations:
-      required: true
+      required: false
   - type: dropdown
     id: emulation-status
     attributes:
@@ -70,4 +70,4 @@ body:
       description: Logs files can be found at user/log
       placeholder: Drag and drop the log file onto the text area.
     validations:
-      required: true
+      required: false
